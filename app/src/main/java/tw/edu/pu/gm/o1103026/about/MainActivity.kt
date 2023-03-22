@@ -2,6 +2,7 @@ package tw.edu.pu.gm.o1103026.about
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -18,5 +19,10 @@ class MainActivity : AppCompatActivity() {
                 txv.text = "邓佳钲你好"
             }
             })
+    }
+    override fun onTouchEvent(event: MotionEvent?): Boolean {
+        var txv:TextView = findViewById(R.id.txv)
+        txv.text = "螢幕觸控"
+        return true
     }
 }
