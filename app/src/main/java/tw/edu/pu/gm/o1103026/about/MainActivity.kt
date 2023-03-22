@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         txv = findViewById(R.id.txv)
         txv.setOnClickListener({
-            txv.text = "邓佳钲你好"
+            txv.text == "邓佳钲你好"
 
         })
     }
