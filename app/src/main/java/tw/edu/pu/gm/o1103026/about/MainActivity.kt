@@ -14,7 +14,9 @@ class MainActivity : AppCompatActivity() {
         txv.setOnClickListener({
             if(txv.text == "邓佳钲你好"){
                 txv.text = "海清班很棒"
-            }else{"邓佳钲你好"}
-        })
+            }else {
+                txv.text = "邓佳钲你好"
+            }
+            })
     }
 }
